@@ -14,11 +14,6 @@ cask "review" do
 
   app "Review.app"
 
-  # Not notarized (ad hoc signature), so skip the Gatekeeper prompt on first open.
-  postflight do
-    system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{appdir}/Review.app"]
-  end
-
   zap trash: [
     "~/Library/Application Support/Review",
     "~/Library/Preferences/com.hamedghaderi.review.plist",
