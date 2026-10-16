@@ -10,7 +10,7 @@ cask "review" do
   desc "Local desktop code review for Git branches"
   homepage "https://github.com/hamedghaderi/review"
 
-  depends_on macos: ">= :ventura"
+  depends_on macos: :ventura
 
   app "Review.app"
 
