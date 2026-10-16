@@ -18,4 +18,15 @@ cask "review" do
     "~/Library/Application Support/Review",
     "~/Library/Preferences/com.hamedghaderi.review.plist",
   ]
+
+  caveats <<~EOS
+    Review is not notarized by Apple yet, so macOS blocks the first open with
+    "Apple could not verify Review is free of malware". To allow it, run:
+
+      xattr -dr com.apple.quarantine #{appdir}/Review.app
+
+    Or try to open it once, then go to System Settings > Privacy & Security
+    and click "Open Anyway" next to "Review was blocked". Only the first open
+    needs this.
+  EOS
 end
