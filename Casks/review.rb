@@ -1,9 +1,9 @@
 cask "review" do
   arch arm: "arm64", intel: "x64"
 
-  version "0.12.0"
-  sha256 arm:   "b8a5268ecd6f228fd5b2fdaccff3ec0a9888f25f7827d455aa9c04974a9936f7",
-         intel: "9c8758ffe8c25792b456acf0c19f7434ce8cb86fd38fc6cb5d6d59e9bbc29f4a"
+  version "0.13.0"
+  sha256 arm:   "04ca802ea641ea98c7dfb9eee99e61ecbfe0f505b4071192f35428877851f134",
+         intel: "7b49b8df3922ea4daea63325a04b2c49e15b3cadf7204ee7af6a78bebeb37621"
 
   url "https://github.com/hamedghaderi/review/releases/download/v#{version}/Review-mac-#{arch}.dmg"
   name "Review"
